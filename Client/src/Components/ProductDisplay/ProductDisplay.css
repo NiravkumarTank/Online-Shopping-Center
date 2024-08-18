@@ -1,0 +1,49 @@
+.product-display {
+    margin-top: 5px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 5px 24px;
+    text-align: left
+  }
+  
+  .product-table img {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #imagetable{
+    height : 100px;
+    }
+
+  .btn-group {
+    display: flex;
+  }
+  
+  .btn-group button {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+ 
+  .btn {
+    /* display: flex; */
+    align-items: center;
+  }
+  
+  #quntbtn {
+    width: 35px; 
+    margin: 0 5px; 
+  }
+  
+  #slot {
+    width: 45px; 
+  }
+  
