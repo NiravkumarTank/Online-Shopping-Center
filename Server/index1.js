@@ -75,39 +75,6 @@ function sendConfirmationEmail(email) {
 
 
 
-
-// app.post('/send-email', (req, res) => {
-//   const { to, subject, message } = req.body;
-
-//   // Create a transporter object using SMTP transport
-//   const transporter = nodemailer.createTransport({
-//     service: 'gmail',
-//     auth: {
-//       user: 'nvtank0000@gmail.com', // Your Gmail email address
-//       pass: 'vudg tlsl njzl lzug' // Your Gmail password
-//     }
-//   });
-
-//   // Define email options
-//   const mailOptions = {
-//     from: 'nvtank0000@gmail.com', // Sender address
-//     to: to, // Recipient address
-//     subject: subject,
-//     text: message
-//   };
-
-//   // Send email
-//   transporter.sendMail(mailOptions, (error, info) => {
-//     if (error) {
-//       console.error('Error sending email:', error);
-//       res.status(500).json({ success: false, message: 'Failed to send email' });
-//     } else {
-//       console.log('Email sent:', info.response);
-//       res.json({ success: true, message: 'Email sent successfully' });
-//     }
-//   });
-// });
-
 app.post('/send-email', (req, res) => {
   // console.log('Request body:', req.body); // Log request body
   const { to, subject, message } = req.body;
